@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="jmg/istockphoto-1079067038-612x612.jpg" type="image/x-icon">
+    <title>Dic</title>
+</head>
+<body>
+    <form id="word-form">
+        <label for="word">Kelime:</label>
+        <input type="text" id="word" name="word" required>
+        <label for="meaning">Anlam:</label>
+        <input type="text" id="meaning" name="meaning" required>
+        <label for="example">Örnek:</label>
+        <textarea id="example" name="example" required></textarea>
+        <label for="category">Kategori:</label>
+        <select id="category" name="category">
+          <option value="beginner">Başlangıç</option>
+          <option value="intermediate">Orta</option>
+          <option value="advanced">İleri</option>
+        </select>
+        <button type="submit">Kaydet</button>
+      </form>
+      <table id="word-table" style="border: 2px solid black; background-color: lightblue;">
+        <tr style="height: 50px;">
+          <th style="width: 100px;">Kelime</th>
+          <th style="width: 100px;">Anlam</th>
+          <th style="width: 200px;">Örnek</th>
+          <th style="width: 100px;">Kategori</th>
+        </tr>
+      </table>
+      
+      <script src="app.js"></script>
+</body>
+</html>
