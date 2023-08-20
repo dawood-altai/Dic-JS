@@ -1,84 +1,84 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 5px;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Form Styles */
-  form {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
     border-radius: 5px;
-  }
-  
-  label {
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
     display: block;
-    margin-top: 10px;
-  }
-  
-  input,
-  textarea,
-  select {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea,
+form select {
     width: 100%;
     padding: 8px;
-    margin-top: 4px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  button {
-    display: block;
-    margin-top: 10px;
-    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+form button[type="submit"] {
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 3px;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* Table Styles */
-  table {
+}
+
+table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
-    border-radius: 10px;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ccc;
-    
-  }
-  
-  th {
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
     background-color: #f2f2f2;
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 600px) {
+}
+
+tr.beginner {
+    background-color: #d4edda;
+}
+
+tr.intermediate {
+    background-color: #f8d7da;
+}
+
+tr.advanced {
+    background-color: #d1ecf1;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
     table {
-      display: block;
-      overflow-x: auto;
-      white-space: nowrap;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
-  
+
     th, td {
-      min-width: 100px;
+        min-width: 100px;
     }
-  }
-  
+}
